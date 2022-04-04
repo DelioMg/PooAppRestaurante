@@ -194,12 +194,12 @@ public class Restaurante {
     public void setPedidos(List <Pedido> pedidos) {
         this.pedidos = pedidos;
     }
-        public Pedido fazerPedido(List<ItemPedido> itensPedidos, Usuario usuario, Restaurante restaurante){
+        public Pedido fazerPedido(List<ItemPedido> itens, Usuario usuario, Restaurante restaurante){
         /*
         O código do pedido é sequencial, simulação para teste
         */
         StatusPedido st = new StatusPedido(StatusPedido.Status.criado);
-        Pedido pedido = new Pedido("1", st, usuario, restaurante, itensPedidos);
+        Pedido pedido = new Pedido("1", restaurante, st, usuario,  itens);
         return pedido;
         
     }  
