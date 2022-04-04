@@ -13,7 +13,7 @@ import java.util.List;
 import pedido.ItemPedido;
 import produto.Produto;
 import restaurante.Restaurante;
-import usuario.Usuario;
+import usuario.usuario;
 
 /**
  *
@@ -54,7 +54,7 @@ public class Projeto {
         /*
         Simulação do usuário
         */
-        Usuario usuario = new Usuario("Ana", "123");
+        usuario usuario = new usuario("Ana", "123");
         /*
         Simulação dos itens de pedido
         */
