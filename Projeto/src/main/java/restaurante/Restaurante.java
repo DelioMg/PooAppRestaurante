@@ -4,10 +4,21 @@
  */
 package restaurante;
 
+import java.math.BigDecimal;
+import java.time.format.DateTimeFormatter;
+
 /**
  *
  * @author PC
  */
 public class Restaurante {
+   
+   private String nome;
+   private BigDecimal taxaFrete;
+   private Boolean ativo;
+   private Boolean aberto;
+   private DateTimeFormatter dataCadastro;
+   private DateTimeFormatter dataAtualizacao;
+   
     
 }

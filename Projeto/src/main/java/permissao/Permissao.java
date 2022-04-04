@@ -2,21 +2,17 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package cozinha;
+package permissao;
 
 /**
  *
  * @author PC
  */
-public class Cozinha {
- 
-    private String nome;
-
-    public Cozinha(String nome) {
-        this.nome = nome;
-    }
-
+public class Permissao {
     
+    private String nome;
+    private String descricao;
+
     /**
      * @return the nome
      */
@@ -31,4 +27,18 @@ public class Cozinha {
         this.nome = nome;
     }
 
+    /**
+     * @return the descricao
+     */
+    public String getDescricao() {
+        return descricao;
+    }
+
+    /**
+     * @param descricao the descricao to set
+     */
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
+    }
+    
 }
