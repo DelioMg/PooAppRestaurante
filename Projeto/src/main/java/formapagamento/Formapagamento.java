@@ -8,10 +8,15 @@ package formapagamento;
  *
  * @author PC
  */
-public class Formapagamento {
+public class FormaPagamento {
     
     private String descricao;
 
+    public FormaPagamento(String descricao) {
+        this.descricao = descricao;
+    }
+
+    
     /**
      * @return the descricao
      */

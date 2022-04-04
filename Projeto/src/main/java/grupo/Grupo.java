@@ -15,6 +15,12 @@ public class Grupo {
     private String grupo;
     private Permissao permissao;
 
+    public Grupo(String grupo, Permissao permissao) {
+        this.grupo = grupo;
+        this.permissao = permissao;
+    }
+    
+    
     /**
      * @return the grupo
      */

@@ -13,6 +13,13 @@ public class Permissao {
     private String nome;
     private String descricao;
 
+    public Permissao(String nome, String descricao) {
+        this.nome = nome;
+        this.descricao = descricao;
+    }
+    
+    
+
     /**
      * @return the nome
      */

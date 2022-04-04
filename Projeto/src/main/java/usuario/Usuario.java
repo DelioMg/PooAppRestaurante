@@ -19,6 +19,11 @@ public class Usuario {
     private DateTimeFormatter dataCadastro;        
     private Grupo grupos;
 
+    public Usuario(String nome, String senha) {
+        this.nome = nome;
+        this.senha = senha;
+    }
+
     /**
      * @return the nome
      */
