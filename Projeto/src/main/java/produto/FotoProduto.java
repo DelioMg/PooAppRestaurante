@@ -9,5 +9,12 @@ package produto;
  * @author PC
  */
 public class FotoProduto {
-    
+    	private String nome;
+
+	private String descricao;
+
+	private String contentType;
+
+	private long tamanho;
+
 }
