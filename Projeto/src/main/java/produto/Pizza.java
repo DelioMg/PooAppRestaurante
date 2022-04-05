@@ -49,12 +49,12 @@ public class Pizza extends Produto {
         this.borda = borda;
     }
 
-    @Override
-    public BigDecimal calcularPreco() {
+
+    public BigDecimal calcularPreco(String sabor, String Borda) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
 
-//calcular preço
+
 //tamanho pode ser sabor 

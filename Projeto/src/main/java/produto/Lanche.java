@@ -48,8 +48,8 @@ public class Lanche extends Produto {
         this.recheio = recheio;
     }
 
-    @Override
-    public BigDecimal calcularPreco() {
+  
+    public BigDecimal calcularPreco(String pao, String recheio) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

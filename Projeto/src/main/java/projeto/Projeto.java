@@ -74,10 +74,7 @@ public class Projeto {
         Simulação da criação do produto
         */
         Produto produto = new Produto("produto A", true) {
-            @Override
-            public BigDecimal calcularPreco() {
-                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-            }
+
         };
         
         /*

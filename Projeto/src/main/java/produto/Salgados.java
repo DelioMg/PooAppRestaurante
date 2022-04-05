@@ -49,8 +49,8 @@ public class Salgados extends Produto {
         this.massa = massa;
     }
 
-    @Override
-    public BigDecimal calcularPreco() {
+    
+    public BigDecimal calcularPreco(String recheio, String massa) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
