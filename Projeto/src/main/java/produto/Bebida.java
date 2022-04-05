@@ -56,6 +56,11 @@ public class Bebida extends Produto {
     public void setTamanho(BigDecimal tamanho) {
         this.tamanho = tamanho;
     }
+
+    @Override
+    public BigDecimal calcularPreco() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }

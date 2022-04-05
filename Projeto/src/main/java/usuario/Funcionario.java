@@ -58,14 +58,7 @@ public abstract class Funcionario extends Usuario{
         return salario;
     }
     
-    /**
-     * @param salario the salario to set
-     */
-    public void setSalario(BigDecimal salario) {
-     
-      this.salario = salario;
-    }
-    
+   
    
     public abstract BigDecimal calcularSalario();
        

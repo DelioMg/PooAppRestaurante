@@ -59,8 +59,8 @@ public class Projeto {
         Funcionario daniel   = new Entregador(new BigDecimal(50),"ppp-0000","8799996666", "Daniel", "da@gmail.com", "dan3210", grupfun);
         Funcionario fernanda = new Atendente("1", "Fernanda", "fe@gmail.com", "fe1234", grupfun);
         Funcionario juliana  = new Cozinheiro("Juliana", "ju@gmail.com", "1234ju", grupfun);
-        Usuario maria    = new Usuario("Maria","ma@gmail.com", "ma2456", grupcli);
-        Usuario cleiton  = new Usuario("Cleiton","ma@gmail.com", "ma2456", grupcli);
+        Usuario maria    = new Cliente("Maria","ma@gmail.com", "ma2456", grupcli);
+        Usuario cleiton  = new Cliente("Cleiton","ma@gmail.com", "ma2456", grupcli);
         
         usuarios.add(mario);
         usuarios.add(daniel);
@@ -73,7 +73,12 @@ public class Projeto {
         /*
         Simulação da criação do produto
         */
-        Produto produto = new Produto("produto A", true);
+        Produto produto = new Produto("produto A", true) {
+            @Override
+            public BigDecimal calcularPreco() {
+                throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+            }
+        };
         
         /*
         Simulação do itemPedido

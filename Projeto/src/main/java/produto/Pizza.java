@@ -4,6 +4,8 @@
  */
 package produto;
 
+import java.math.BigDecimal;
+
 /**
  *
  * @author PC
@@ -45,6 +47,11 @@ public class Pizza extends Produto {
      */
     public void setBorda(String borda) {
         this.borda = borda;
+    }
+
+    @Override
+    public BigDecimal calcularPreco() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

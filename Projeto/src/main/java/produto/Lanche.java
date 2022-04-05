@@ -4,6 +4,8 @@
  */
 package produto;
 
+import java.math.BigDecimal;
+
 /**
  *
  * @author PC
@@ -44,6 +46,11 @@ public class Lanche extends Produto {
      */
     public void setRecheio(String recheio) {
         this.recheio = recheio;
+    }
+
+    @Override
+    public BigDecimal calcularPreco() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

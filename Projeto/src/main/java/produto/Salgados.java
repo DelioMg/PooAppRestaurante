@@ -4,6 +4,8 @@
  */
 package produto;
 
+import java.math.BigDecimal;
+
 /**
  *
  * @author PC
@@ -45,6 +47,11 @@ public class Salgados extends Produto {
      */
     public void setMassa(String massa) {
         this.massa = massa;
+    }
+
+    @Override
+    public BigDecimal calcularPreco() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

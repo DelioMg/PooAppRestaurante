@@ -10,7 +10,7 @@ import java.math.BigDecimal;
  *
  * @author PC
  */
-public class Produto {
+public abstract class Produto {
     
     private String nome;
     private String descricao;
@@ -62,5 +62,5 @@ public class Produto {
     public void setFotoproduto(FotoProduto fotoproduto) {
         this.fotoproduto = fotoproduto;
     }
-
+public abstract BigDecimal calcularPreco();
 }
