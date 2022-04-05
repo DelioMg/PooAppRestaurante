@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package usuario;
 
 import grupo.Grupo;
@@ -47,6 +43,7 @@ public class Gerente extends Funcionario {
     }
 
     
+    
     @Override
     public BigDecimal calcularSalario() {
      Float soma = super.getSalario().floatValue() + this.adicionalmeta.floatValue();
@@ -55,7 +52,7 @@ public class Gerente extends Funcionario {
     
        public String toString(){
        String user;
-       user = "Dados do Gerente "+this.nome+ " email: "+this.email+ " senha: "+this.senha+" Grupo "+this.grupo;
+       user = "Dados do Gerente "+this.nome+ " email: "+this.email+ " senha: "+this.senha+" Salario: "+this.salario+" Grupo "+this.grupo;
       return user;
     }
 }

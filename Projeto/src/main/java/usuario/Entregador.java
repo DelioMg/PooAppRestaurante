@@ -60,7 +60,7 @@ public class Entregador extends Funcionario{
     
       public String toString(){
        String user;
-       user = "Dados da Entregador "+this.nome+ " email: "+this.email+ " senha: "+this.senha+ " Placa da moto: "+this.placa+" telefone:"+this.telefone+" Grupo "+this.grupo;
+       user = "Dados da Entregador "+this.nome+ " email: "+this.email+ " senha: "+this.senha+ " Placa da moto: "+this.placa+" telefone:"+this.telefone+" Salario: "+this.salario+" Grupo "+this.grupo;
       return user;
     }
 }

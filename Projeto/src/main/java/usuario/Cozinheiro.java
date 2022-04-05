@@ -25,7 +25,7 @@ public class Cozinheiro extends Funcionario {
     @Override
        public String toString(){
        String user;
-       user = "Dados do Cozinheiro "+this.nome+ " email: "+this.email+ " senha: "+this.senha+" Grupo "+this.grupo;
+       user = "Dados do Cozinheiro "+this.nome+ " email: "+this.email+ " senha: "+this.senha+" Salario: "+this.salario+" Grupo "+this.grupo;
       return user;
     }
 }

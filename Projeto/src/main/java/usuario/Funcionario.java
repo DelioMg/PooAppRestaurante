@@ -16,7 +16,7 @@ public abstract class Funcionario extends Usuario{
     
     private LocalDateTime admissao;
     private String matricula;
-    private BigDecimal salario;   
+    BigDecimal salario;   
     
     public Funcionario(String nome, String email, String senha, Grupo grupo) {
         super(nome, email, senha, grupo);
@@ -54,17 +54,19 @@ public abstract class Funcionario extends Usuario{
      * @return the salario
      */
     public BigDecimal getSalario() {
-        return new BigDecimal(1000);
+        salario = new BigDecimal(1000);
+        return salario;
     }
-
+    
     /**
      * @param salario the salario to set
      */
     public void setSalario(BigDecimal salario) {
-        
-        this.salario = salario;
+     
+      this.salario = salario;
     }
     
+   
     public abstract BigDecimal calcularSalario();
        
 }

@@ -42,6 +42,7 @@ public class Projeto {
         Permissao permfun = new Permissao("Funcionario", "Editar");
         Grupo grupfun = new Grupo("Funcionario", permfun);
         
+           
 
         java.util.List<restaurante.Restaurante>  restaurantes;
         restaurantes = new ArrayList();
