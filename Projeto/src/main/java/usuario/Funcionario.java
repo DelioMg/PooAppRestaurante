@@ -18,7 +18,8 @@ public abstract class Funcionario extends Usuario implements Pagavel{
     private LocalDateTime admissao;
     private String matricula;
     BigDecimal salario;   
- // pensar string matricula    
+ // pensar string matricula 
+ // private DadosBancarios dados;
     public Funcionario(String nome, String email, String senha, Grupo grupo) {
         super(nome, email, senha, grupo);
     }

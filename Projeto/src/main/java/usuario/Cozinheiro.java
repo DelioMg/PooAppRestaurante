@@ -15,11 +15,13 @@ import java.math.BigDecimal;
 public class Cozinheiro extends Funcionario {
      
     private Tipocozinha tipo; 
-    
+//bigdecimal salario
+//bigdecimal adicional    
     public Cozinheiro(String nome, String email, String senha, Grupo grupo) {
         super(nome, email, senha, grupo);
     }
-
+//pagar 
+//BigDecimal.valueof    
     @Override
     public BigDecimal calcularSalario() {
          return super.getSalario();
