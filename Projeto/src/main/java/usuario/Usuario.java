@@ -5,24 +5,31 @@
 package usuario;
 
 import grupo.Grupo;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 /**
  *
  * @author PC
  */
-public class Usuario {
+public class Usuario{
     
     private String nome;
     private String email;
     private String senha;
-    private DateTimeFormatter dataCadastro;        
-    private Grupo grupos;
+    private DateTimeFormatter dataCadastro;
+    private LocalDateTime agora;
+    private Grupo grupo;
 
-    public Usuario(String nome, String senha) {
+    public Usuario(String nome, String email, String senha, Grupo grupo) {
         this.nome = nome;
+        this.email = email;
         this.senha = senha;
+        this.grupo = grupo;
+        agora = LocalDateTime.now();
     }
+
+    
 
     /**
      * @return the nome
@@ -84,13 +91,13 @@ public class Usuario {
      * @return the grupos
      */
     public Grupo getGrupos() {
-        return grupos;
+        return grupo;
     }
 
     /**
      * @param grupos the grupos to set
      */
     public void setGrupos(Grupo grupos) {
-        this.grupos = grupos;
+        this.grupo = grupo;
     }
 }

@@ -13,7 +13,7 @@ import java.util.List;
 import pedido.ItemPedido;
 import pedido.Pedido;
 import pedido.StatusPedido;
-import usuario.usuario;
+import usuario.Usuario;
 
 /**
  *
@@ -29,7 +29,7 @@ public class Restaurante {
    private DateTimeFormatter dataAtualizacao;
    private Endereco endereco;
    private Cozinha cozinha;
-   private List <usuario> usuarios;
+   private List <Usuario> usuarios;
    private List <FormaPagamento> formapagamento;
    private List <Pedido> pedidos;
 
@@ -156,14 +156,14 @@ public class Restaurante {
     /**
      * @return the usuarios
      */
-    public List <usuario> getUsuarios() {
+    public List <Usuario> getUsuarios() {
         return usuarios;
     }
 
     /**
      * @param usuarios the usuarios to set
      */
-    public void setUsuarios(List <usuario> usuarios) {
+    public void setUsuarios(List <Usuario> usuarios) {
         this.usuarios = usuarios;
     }
 
@@ -194,7 +194,7 @@ public class Restaurante {
     public void setPedidos(List <Pedido> pedidos) {
         this.pedidos = pedidos;
     }
-        public Pedido fazerPedido(List<ItemPedido> itens, usuario usuario, Restaurante restaurante){
+        public Pedido fazerPedido(List<ItemPedido> itens, Usuario usuario, Restaurante restaurante){
         /*
         O código do pedido é sequencial, simulação para teste
         */

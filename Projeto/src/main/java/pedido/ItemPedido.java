@@ -98,3 +98,6 @@ public class ItemPedido {
         this.produto = produto;
     }
 }
+
+//calcular o subtotal
+//calcular a quantidade

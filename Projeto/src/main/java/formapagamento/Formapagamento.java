@@ -32,3 +32,5 @@ public class FormaPagamento {
     }
     
 }
+
+//ver caso de colocar descontos por modo

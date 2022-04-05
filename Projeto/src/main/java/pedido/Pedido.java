@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import restaurante.Restaurante;
-import usuario.usuario;
+import usuario.Usuario;
 
 /**
  *
@@ -29,11 +29,11 @@ public class Pedido {
     private Restaurante restaurante;
     private FormaPagamento formaPagamento;
     private StatusPedido statusPedido;
-    private usuario cliente;
+    private Usuario cliente;
     private Endereco enderecoEntrega;
     private List<ItemPedido> itens;
 
-    public Pedido(String codigo, Restaurante restaurante, StatusPedido statusPedido, usuario cliente, List<ItemPedido> itens) {
+    public Pedido(String codigo, Restaurante restaurante, StatusPedido statusPedido, Usuario cliente, List<ItemPedido> itens) {
         this.codigo = codigo;
         this.restaurante = restaurante;
         this.statusPedido = statusPedido;
@@ -198,14 +198,14 @@ public class Pedido {
     /**
      * @return the cliente
      */
-    public usuario getCliente() {
+    public Usuario getCliente() {
         return cliente;
     }
 
     /**
      * @param cliente the cliente to set
      */
-    public void setCliente(usuario cliente) {
+    public void setCliente(Usuario cliente) {
         this.cliente = cliente;
     }
 
@@ -240,4 +240,5 @@ public class Pedido {
 
     }
         
-        
+    //puxar subtotal
+    //calcular o total
