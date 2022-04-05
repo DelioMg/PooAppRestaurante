@@ -14,6 +14,7 @@ import restaurante.Restaurante;
 import usuario.Atendente;
 import usuario.Cozinheiro;
 import usuario.Entregador;
+import usuario.Funcionario;
 import usuario.Gerente;
 import usuario.Usuario;
 
@@ -53,9 +54,9 @@ public class Projeto {
         usuarios = new ArrayList();
         
         Funcionario mario    = new Gerente(new BigDecimal(800), "Mario", "ma@gmail.com", "mar3210", grupfun);
-        Usuario daniel   = new Entregador(new BigDecimal(50),"ppp-0000","8799996666", "Daniel", "da@gmail.com", "dan3210", grupfun);
-        Usuario fernanda = new Atendente("1", "Fernanda", "fe@gmail.com", "fe1234", grupfun);
-        Usuario juliana  = new Cozinheiro("Juliana", "ju@gmail.com", "1234ju", grupfun);
+        Funcionario daniel   = new Entregador(new BigDecimal(50),"ppp-0000","8799996666", "Daniel", "da@gmail.com", "dan3210", grupfun);
+        Funcionario fernanda = new Atendente("1", "Fernanda", "fe@gmail.com", "fe1234", grupfun);
+        Funcionario juliana  = new Cozinheiro("Juliana", "ju@gmail.com", "1234ju", grupfun);
         Usuario maria    = new Usuario("Maria","ma@gmail.com", "ma2456", grupcli);
         Usuario cleiton  = new Usuario("Cleiton","ma@gmail.com", "ma2456", grupcli);
         
@@ -87,6 +88,8 @@ public class Projeto {
         mario.calcularSalario();
         fernanda.calcularSalario();
         daniel.calcularSalario();
+        
+        
         System.out.println("Todos os pacotes foram implementados com sucesso");
     }
 }
