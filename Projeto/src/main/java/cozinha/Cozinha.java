@@ -11,6 +11,9 @@ package cozinha;
 public class Cozinha {
  
     private String nome;
+    public enum Tipocozinha {
+    pizzaria, lachonte, restaurante, churraco, vegado;
+    }
 
     public Cozinha(String nome) {
         this.nome = nome;

@@ -4,6 +4,7 @@
  */
 package usuario;
 
+import formapagamento.Pagavel;
 import grupo.Grupo;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -12,12 +13,12 @@ import java.time.LocalDateTime;
  *
  * @author PC
  */
-public abstract class Funcionario extends Usuario{
+public abstract class Funcionario extends Usuario implements Pagavel{
     
     private LocalDateTime admissao;
     private String matricula;
     BigDecimal salario;   
-    
+ // pensar string matricula    
     public Funcionario(String nome, String email, String senha, Grupo grupo) {
         super(nome, email, senha, grupo);
     }
@@ -61,5 +62,10 @@ public abstract class Funcionario extends Usuario{
    
    
     public abstract BigDecimal calcularSalario();
+
+    @Override
+    public void pagar(BigDecimal valor) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
        
 }
