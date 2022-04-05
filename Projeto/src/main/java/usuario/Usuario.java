@@ -14,12 +14,12 @@ import java.time.format.DateTimeFormatter;
  */
 public class Usuario{
     
-    private String nome;
-    private String email;
-    private String senha;
+    String nome;
+    String email;
+    String senha;
     private DateTimeFormatter dataCadastro;
     private LocalDateTime agora;
-    private Grupo grupo;
+    Grupo grupo;
 
     public Usuario(String nome, String email, String senha, Grupo grupo) {
         this.nome = nome;

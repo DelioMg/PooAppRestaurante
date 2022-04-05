@@ -53,6 +53,11 @@ public class Gerente extends Funcionario {
      return new BigDecimal(soma);
     }
     
+       public String toString(){
+       String user;
+       user = "Dados do Gerente "+this.nome+ " email: "+this.email+ " senha: "+this.senha+" Grupo "+this.grupo;
+      return user;
+    }
 }
 
 //cadastrar produtos

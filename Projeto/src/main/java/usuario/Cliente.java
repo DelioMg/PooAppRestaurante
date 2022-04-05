@@ -34,6 +34,12 @@ public class Cliente extends Usuario {
     public void setPreferencias(Produto produto) {
         this.preferencias.add(produto);
     }
-    
+  
+    @Override
+       public String toString(){
+       String user;
+       user = "Dados da Cliente "+this.nome+ " email: "+this.email+ " senha: "+this.senha+" Grupo "+this.grupo;
+      return user;
+    }
 }
 

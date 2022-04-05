@@ -12,6 +12,7 @@ import permissao.Permissao;
 import produto.Produto;
 import restaurante.Restaurante;
 import usuario.Atendente;
+import usuario.Cliente;
 import usuario.Cozinheiro;
 import usuario.Entregador;
 import usuario.Funcionario;
@@ -38,8 +39,8 @@ public class Projeto {
         Permissao permcli = new Permissao("cliente","escolher");
         Grupo grupcli = new Grupo("cliente",permcli);
         
-        Permissao permfun = new Permissao("Funcionario","Editar");
-        Grupo grupfun = new Grupo("Funcionario",permfun);
+        Permissao permfun = new Permissao("Funcionario", "Editar");
+        Grupo grupfun = new Grupo("Funcionario", permfun);
         
 
         java.util.List<restaurante.Restaurante>  restaurantes;
@@ -79,6 +80,7 @@ public class Projeto {
  
         ItemPedido item = new ItemPedido(1, new BigDecimal(10.00), "nada", produto);
         
+          
         itens.add(item);
         /*
         Simulação da escolha do restaurante. O usuário o restaruante A.
@@ -88,6 +90,12 @@ public class Projeto {
         mario.calcularSalario();
         fernanda.calcularSalario();
         daniel.calcularSalario();
+        
+        System.out.println(mario.toString());
+        System.out.println(daniel.toString());
+        System.out.println(fernanda.toString());
+        System.out.println(maria.toString());
+        System.out.println(cleiton.toString());
         
         
         System.out.println("Todos os pacotes foram implementados com sucesso");

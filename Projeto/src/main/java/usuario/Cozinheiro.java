@@ -21,5 +21,11 @@ public class Cozinheiro extends Funcionario {
     public BigDecimal calcularSalario() {
          return super.getSalario();
     }
-    
+   
+    @Override
+       public String toString(){
+       String user;
+       user = "Dados do Cozinheiro "+this.nome+ " email: "+this.email+ " senha: "+this.senha+" Grupo "+this.grupo;
+      return user;
+    }
 }

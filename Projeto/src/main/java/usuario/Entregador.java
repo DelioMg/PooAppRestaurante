@@ -58,5 +58,9 @@ public class Entregador extends Funcionario{
      return new BigDecimal(soma);
     }
     
-
+      public String toString(){
+       String user;
+       user = "Dados da Entregador "+this.nome+ " email: "+this.email+ " senha: "+this.senha+ " Placa da moto: "+this.placa+" telefone:"+this.telefone+" Grupo "+this.grupo;
+      return user;
+    }
 }
