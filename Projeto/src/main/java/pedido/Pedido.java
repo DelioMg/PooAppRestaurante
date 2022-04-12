@@ -5,7 +5,7 @@
 package pedido;
 
 import endereco.Endereco;
-import formapagamento.FormaPagamento;
+import formapagamento.Formapagamento;
 import java.math.BigDecimal;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -27,7 +27,7 @@ public class Pedido {
     private DateTimeFormatter dataEntrega;
     private DateTimeFormatter dataCancelamento;
     private Restaurante restaurante;
-    private FormaPagamento formaPagamento;
+    private Formapagamento formaPagamento;
     private StatusPedido statusPedido;
     private Usuario cliente;
     private Endereco enderecoEntrega;
@@ -170,14 +170,14 @@ public class Pedido {
     /**
      * @return the formaPagamento
      */
-    public FormaPagamento getFormaPagamento() {
+    public Formapagamento getFormaPagamento() {
         return formaPagamento;
     }
 
     /**
      * @param formaPagamento the formaPagamento to set
      */
-    public void setFormaPagamento(FormaPagamento formaPagamento) {
+    public void setFormaPagamento(Formapagamento formaPagamento) {
         this.formaPagamento = formaPagamento;
     }
 

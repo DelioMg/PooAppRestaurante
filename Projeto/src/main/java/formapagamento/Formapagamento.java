@@ -8,11 +8,11 @@ package formapagamento;
  *
  * @author PC
  */
-public class FormaPagamento implements Ipagamentos {
+public class Formapagamento  {
     
     private String descricao;
 
-    public FormaPagamento(String descricao) {
+    public Formapagamento(String descricao) {
         this.descricao = descricao;
     }
 
@@ -31,16 +31,6 @@ public class FormaPagamento implements Ipagamentos {
         this.descricao = descricao;
     }
 
-    @Override
-    public void Pagar(double valor) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void Troco(double valor) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
 }
 
 //ver caso de colocar descontos por modo

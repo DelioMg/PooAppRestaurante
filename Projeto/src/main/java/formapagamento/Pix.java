@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author PC
  */
-public class Pix extends FormaPagamento implements Pagavel,Recebivel{
+public class Pix extends Formapagamento implements Pagavel,Recebivel{
   
     public enum Chaves{
 CPF, CNPJ, TELEFONE, EMAIL, CHAVEALEATORIA;

@@ -6,7 +6,7 @@ package restaurante;
 
 import cozinha.Cozinha;
 import endereco.Endereco;
-import formapagamento.FormaPagamento;
+import formapagamento.Formapagamento;
 import java.math.BigDecimal;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -30,7 +30,7 @@ public class Restaurante {
    private Endereco endereco;
    private Cozinha cozinha;
    private List <Usuario> usuarios;
-   private List <FormaPagamento> formapagamento;
+   private List <Formapagamento> formapagamento;
    private List <Pedido> pedidos;
 
     public Restaurante(String nome, Boolean ativo, Endereco endereco) {
@@ -170,14 +170,14 @@ public class Restaurante {
     /**
      * @return the formapagamento
      */
-    public List <FormaPagamento> getFormapagamento() {
+    public List <Formapagamento> getFormapagamento() {
         return formapagamento;
     }
 
     /**
      * @param formapagamento the formapagamento to set
      */
-    public void setFormapagamento(List <FormaPagamento> formapagamento) {
+    public void setFormapagamento(List <Formapagamento> formapagamento) {
         this.formapagamento = formapagamento;
     }
 

@@ -98,6 +98,7 @@ public class Projeto {
         System.out.println(daniel.toString());
         System.out.println(fernanda.toString());
         System.out.println(maria.toString());
+        System.out.println(juliana.toString());
         System.out.println(cleiton.toString());
         
         

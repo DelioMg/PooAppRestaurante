@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author PC
  */
-public class Cartao extends FormaPagamento implements Pagavel,Recebivel {
+public class Cartao extends Formapagamento implements Pagavel,Recebivel {
 
     private String numero;
     private Date datavencimento;

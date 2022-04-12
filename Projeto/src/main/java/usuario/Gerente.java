@@ -52,7 +52,7 @@ public class Gerente extends Funcionario {
     
        public String toString(){
        String user;
-       user = "Dados do Gerente "+this.nome+ " email: "+this.email+ " senha: "+this.senha+" Salario: "+this.salario+" Grupo "+this.grupo;
+       user = "Dados do Gerente "+this.nome+ " email: "+this.email+ " senha: "+this.senha+" Salario: "+this.calcularSalario() +" Grupo "+this.grupo;
       return user;
     }
 }
