@@ -8,6 +8,6 @@ package formapagamento;
  *
  * @author PC
  */
-public class FormaRecebimento {
+public class FormaRecebimento  {
     
 }

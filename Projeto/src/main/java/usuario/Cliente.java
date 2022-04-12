@@ -38,7 +38,7 @@ public class Cliente extends Usuario {
     @Override
        public String toString(){
        String user;
-       user = "Dados da Cliente "+this.nome+ " email: "+this.email+ " senha: "+this.senha+" Grupo "+this.grupo;
+       user = "Dados da Cliente "+this.nome+ " email: "+this.email+ " senha: "+this.senha;
       return user;
     }
 }
